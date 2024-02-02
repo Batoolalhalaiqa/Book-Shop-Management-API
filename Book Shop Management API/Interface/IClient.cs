@@ -8,25 +8,20 @@ namespace Book_Shop_Management_API.Interface
     {
         //ViewSubsecriptions
         List<SubsecriptionDTO> GetAllSubsecription();
-        public List<SubsecriptionDTO> CheckSubsecriptionStatus(string SubsecriptionName, bool IsAvaible);
+        public List<SubsecriptionDTO> CheckSubsecriptionStatus(string SubsecriptionName, bool Isavailable);
 
         //ViewBook
         List<BookTypeDTO> GetAllBookType();
 
         List<BookDTO> GetAllBook();
 
-        public List<BookDTO> CheckBookStatus(string Title, bool IsAvaible);
+        public List<BookDTO> CheckBookStatus(string Title, bool Isavailable);
 
         //FilteringSubsecriptions
         Task<List<SubsecriptionDTO>> Filtering(string SubsecriptionName, float price, string DurationDay);
         Task<List<BookDTO>> FilteringBook(string Title, int TypeBookId, string Author);
         Task<SubsecriptionDTO> DownloadBookAmount(string DownloadBookAmount, int SubsecriptionId);
 
-
-        //Registration,Login,ResetPassword
-        Task CreateNewAccount(RegistraionDTO dto);
-        Task Login(LoginDTO dto);
-        Task RestPassword(RestPasswordDto dto);
 
     }
 

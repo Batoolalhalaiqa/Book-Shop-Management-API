@@ -11,7 +11,7 @@ namespace Book_Shop_Management_API.Models.Entity
         public string DurationDay { get; set; }
         public string DownloadBookAmount { get; set; }
         public float Price { get; set; }
-        public bool IsAvaible { get; set; }
+        public bool Isavailable { get; set; }
         public int? ClientId { get; set; }
         public int? EmployeeId { get; set; }
         public int? AdminId { get; set; }

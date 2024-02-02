@@ -16,7 +16,7 @@ namespace Book_Shop_Management_API.Models.Entity.EntityConfigration
             builder.Property(x => x.Description).HasMaxLength(150);
             builder.HasIndex(x => x.Quantity).IsUnique();
             builder.ToTable(t => t.HasCheckConstraint("CH_Quantity", "Quantity >=1 "));
-            builder.Property(x => x.IsAvaible).IsRequired().HasDefaultValue(true);
+            builder.Property(x => x.Isavailable).IsRequired().HasDefaultValue(true);
             builder.HasOne<TypeBook>(x => x.TypeBook).WithMany("Books");
 
         }

@@ -10,7 +10,7 @@
         public string DurationDayAvaible { get; set; }
         public int Quantity { get; set; }
         public String Version { get; set; }
-        public bool IsAvaible { get; set; }
+        public bool Isavailable { get; set; }
 
         public virtual TypeBook TypeBook { get; set; } 
     }

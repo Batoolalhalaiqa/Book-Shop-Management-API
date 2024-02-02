@@ -8,7 +8,7 @@
         public string Author { get; set; }
         public DateTime CreatedDate { get; set; }
         public string DurationDayAvaible { get; set; }
-        public bool IsAvaible { get; set; }
+        public bool Isavailable { get; set; }
         public int Quantity { get; set; }
         public string Version { get; set; }
     }

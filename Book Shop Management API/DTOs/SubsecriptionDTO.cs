@@ -9,6 +9,6 @@
         public string DurationDay { get; set; }
         public string DownloadBookAmount { get; set; }
         public float Price { get; set; }
-        public bool IsAvaible { get; set; } 
+        public bool Isavailable { get; set; } 
     }
 }

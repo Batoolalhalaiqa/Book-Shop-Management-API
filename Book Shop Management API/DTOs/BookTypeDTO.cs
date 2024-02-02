@@ -4,5 +4,6 @@
     {
         public int TypeBookId { get; set; }
         public string Name { get; set; }
+        public object BookTypeId { get; internal set; }
     }
 }
