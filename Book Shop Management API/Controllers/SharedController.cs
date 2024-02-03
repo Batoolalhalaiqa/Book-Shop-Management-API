@@ -127,6 +127,7 @@ namespace Book_Shop_Management_API.Controllers
             throw new NotImplementedException();
         }
         #endregion
+        
         #region Implementations
         [NonAction]
         public async Task CreateNewAccount(RegistraionDTO dto)
@@ -192,6 +193,15 @@ namespace Book_Shop_Management_API.Controllers
             }
         }
 
-        
+        public Task RestPassword(ResetPasswordDto dto)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<IActionResult> Ishared.CreateNewAccount(RegistraionDTO dto)
+        {
+            throw new NotImplementedException();
+        }
+        #endregion
     }
 }
